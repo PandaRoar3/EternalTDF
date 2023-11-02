@@ -1,0 +1,33 @@
+while true do
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Game"):WaitForChild("StartGameButton"):FireServer()
+    wait()
+    
+    local function spawnTower(name, cframe, cost)
+        local args = {
+            [1] = name,
+            [2] = cframe,
+            [3] = cost
+        }
+
+        game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnTower"):InvokeServer(unpack(args))
+    }
+    
+    spawnTower("Sato", CFrame.new(-1099.384, 6.176, -251.138), 800)
+    spawnTower("Swordsman (Star King)", CFrame.new(-1099.384, 6.176, -251.138), 1450)
+    spawnTower("Melice (Burst Element)", CFrame.new(-1099.384, 6.176, -251.138), 1500)
+    spawnTower("Brolu (Rage)", CFrame.new(-1099.384, 6.176, -251.138), 1850)
+    spawnTower("Tomi", CFrame.new(-1099.384, 6.176, -251.138), 2250)
+    spawnTower("Rudus (Magician)", CFrame.new(-1099.384, 6.176, -251.138), 1600)
+    
+    wait(1)
+    
+    for _, tower in ipairs(workspace:WaitForChild("Running"):WaitForChild("Towers"):GetChildren()) do
+        if tower:IsA("Model") then
+            local args = {
+                [1] = tower
+            }
+            game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("UpgradeTower"):InvokeServer(unpack(args))
+        end
+    end
+    wait()
+end
