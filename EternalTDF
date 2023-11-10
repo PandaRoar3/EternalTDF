@@ -165,8 +165,8 @@ MainSection:NewToggle("Spawn Tower Future City", "Enable/Disable tower spawn", f
     game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnTower"):InvokeServer(unpack(args))
 end
 
-spawnTower("Sato", CFrame.new(-217.862, -330.697, 884.035), 800)
 spawnTower("Roku Black (Scythe)", CFrame.new(-217.862, -330.697, 884.035), 950)
+spawnTower("Sato", CFrame.new(-217.862, -330.697, 884.035), 800)
 spawnTower("Melice (Burst Element)", CFrame.new(-217.862, -330.697, 884.035), 1500)
 spawnTower("Zamas (God)", CFrame.new(-217.862, -330.697, 884.035), 1300)
 spawnTower("Tomi", CFrame.new(-217.862, -330.697, 884.035), 2250)
