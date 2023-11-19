@@ -175,6 +175,29 @@ spawnTower("Vagito (Super)", CFrame.new(-217.862, -330.697, 884.035), 2000)
     end
 end)
 
+MainSection:NewToggle("Spawn Tower Black Clover", "Enable/Disable tower spawn", function(state)
+	SpawnTowers = state
+	while SpawnTowers do
+    	local function spawnTower(name, cframe, cost)
+    	local args = {
+        	[1] = name,
+        	[2] = cframe,
+        	[3] = cost
+    	}
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnTower"):InvokeServer(unpack(args))
+end
+
+spawnTower("Roku Black (Scythe)", CFrame.new(-217.862, -330.697, 884.035), 950)
+spawnTower("Sato", CFrame.new(-217.862, -330.697, 884.035), 800)
+spawnTower("Zamas (God)", CFrame.new(-217.862, -330.697, 884.035), 1300)
+spawnTower("Asto (Demonic Angle)", CFrame.new(-217.862, -330.697, 884.035), 1450)
+spawnTower("Yamo (Leader)", CFrame.new(-217.862, -330.697, 884.035), 1350)
+spawnTower("Eugo", CFrame.new(-217.862, -330.697, 884.035), 1400)
+   wait(1)
+    end
+end)
+
 MainSection:NewToggle("Toggle Upgrade Towers", "Enable/Disable tower upgrades", function(state)
     upgradeTowers = state
     while upgradeTowers do
