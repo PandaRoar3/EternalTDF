@@ -193,7 +193,7 @@ spawnTower("Roku Black (Scythe)", CFrame.new(280.481, 663.760, 326.824), 950)
 spawnTower("Sato", CFrame.new(280.481, 663.760, 326.824), 800)
 spawnTower("Manipulator", CFrame.new(312.147, 663.808, 283.1214), 800)
 spawnTower("Zamas (God)", CFrame.new(280.481, 663.760, 326.824), 1300)
-spawnTower("Asto (Demonic Angle)", CFrame.new(280.481, 663.760, 326.824), 1450)
+spawnTower("Asto (Demonic Angel)", CFrame.new(280.481, 663.760, 326.824), 1450)
 spawnTower("Yamo (Leader)", CFrame.new(280.481, 663.760, 326.824), 1350)
 
    wait(1)
