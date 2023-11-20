@@ -95,13 +95,12 @@ MainSection:NewToggle("Spawn Tower 4Th War", "Enable/Disable tower spawn", funct
 
     game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnTower"):InvokeServer(unpack(args))
 end
-
-spawnTower("Sato", CFrame.new(175.471, 521.528, 158.905), 800)
 spawnTower("Roku Black (Scythe)", CFrame.new(175.471, 521.528, 158.905), 950)
-spawnTower("Melice (Burst Element)", CFrame.new(175.471, 521.528, 158.905), 1500)
+spawnTower("Sato", CFrame.new(175.471, 521.528, 158.905), 800)
+spawnTower("Manipulator", CFrame.new(175.471, 521.528, 158.905), 800)
 spawnTower("Zamas (God)", CFrame.new(175.471, 521.528, 158.905), 1300)
-spawnTower("Tomi", CFrame.new(175.471, 521.528, 158.905), 2250)
-spawnTower("Vagito (Super)", CFrame.new(175.471, 521.528, 158.905), 2000)
+spawnTower("Asto (Demonic Angel)", CFrame.new(175.471, 521.528, 158.905), 1450)
+spawnTower("Yamo (Leader)", CFrame.new(175.471, 521.528, 158.905), 1350)
    wait(1)
     end
 end)
