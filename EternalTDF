@@ -117,7 +117,6 @@ MainSection:NewToggle("Spawn Tower Dark Territory", "Enable/Disable tower spawn"
 
     game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnTower"):InvokeServer(unpack(args))
 end
-
 spawnTower("Sato", CFrame.new(163.937, 142.357, 59.263), 800)
 spawnTower("Roku Black (Scythe)", CFrame.new(163.937, 142.357, 59.263), 950)
 spawnTower("Manipulator", CFrame.new(163.937, 142.357, 59.263), 800)
@@ -140,13 +139,12 @@ MainSection:NewToggle("Spawn Tower JujutsuKaisen", "Enable/Disable tower spawn",
 
     game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("SpawnTower"):InvokeServer(unpack(args))
 end
-
 spawnTower("Sato", CFrame.new(1290.512, 352.661, 649.034), 800)
 spawnTower("Roku Black (Scythe)", CFrame.new(1290.512, 352.661, 649.034), 950)
-spawnTower("Melice (Burst Element)", CFrame.new(1290.512, 352.661, 649.034), 1500)
+spawnTower("Manipulator", CFrame.new(1290.512, 352.661, 649.034), 800)
 spawnTower("Zamas (God)", CFrame.new(1290.512, 352.661, 649.034), 1300)
-spawnTower("Tomi", CFrame.new(1290.512, 352.661, 649.034), 2250)
-spawnTower("Vagito (Super)", CFrame.new(1290.512, 352.661, 649.034), 2000)
+spawnTower("Asto (Demonic Angel)", CFrame.new(1290.512, 352.661, 649.034), 1450)
+spawnTower("Yamo (Leader)", CFrame.new(1290.512, 352.661, 649.034), 1350)
    wait(1)
     end
 end)
